@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — AI Click And Cash</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito Sans', sans-serif; background: #fff; color: #222; }
+    .top-bar { background: #9c130d; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; }
+    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; }
+    .top-bar .back { font-size: 14px; font-weight: 600; opacity: 0.85; }
+    .top-bar .back:hover { opacity: 1; }
+    .content { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+    h1 { font-size: 32px; font-weight: 800; color: #9c130d; margin-bottom: 8px; }
+    .sub { font-size: 16px; color: #666; margin-bottom: 40px; }
+    .contact-cards { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 48px; }
+    .contact-card { flex: 1; min-width: 200px; background: #fff5f5; border: 2px solid #f3b5a2; border-radius: 14px; padding: 24px 20px; text-align: center; }
+    .contact-card .icon { font-size: 32px; margin-bottom: 10px; }
+    .contact-card h3 { font-size: 16px; font-weight: 700; color: #111; margin-bottom: 6px; }
+    .contact-card p { font-size: 14px; color: #666; margin: 0; }
+    .contact-card a { color: #9c130d; font-weight: 600; text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+    .form-section h2 { font-size: 22px; font-weight: 700; color: #111; margin-bottom: 24px; }
+    .form-group { margin-bottom: 20px; }
+    label { display: block; font-size: 14px; font-weight: 600; color: #333; margin-bottom: 6px; }
+    input, select, textarea { width: 100%; padding: 12px 14px; border: 2px solid #e5e5e5; border-radius: 8px; font-family: 'Nunito Sans', sans-serif; font-size: 14px; color: #222; transition: border-color 0.2s; outline: none; }
+    input:focus, select:focus, textarea:focus { border-color: #9c130d; }
+    textarea { min-height: 130px; resize: vertical; }
+    .btn-submit { background: linear-gradient(135deg, #9c130d, #c62e28); color: #fff; border: none; padding: 14px 36px; border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+    .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(156,19,13,0.35); }
+    .response-note { font-size: 13px; color: #888; margin-top: 12px; }
+    footer { background: #111; color: #888; text-align: center; font-size: 12px; padding: 20px; }
+    footer a { color: #aaa; }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="index.html">AI Click And Cash</a>
+    <a href="index.html" class="back">← Back to Home</a>
+  </div>
+  <div class="content">
+    <h1>Contact Us</h1>
+    <p class="sub">We're here to help. Our support team typically responds within 24–48 business hours.</p>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="icon">📧</div>
+        <h3>General Support</h3>
+        <p><a href="mailto:support@aiclickandcash.com">support@aiclickandcash.com</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="icon">💳</div>
+        <h3>Billing & Refunds</h3>
+        <p><a href="mailto:billing@aiclickandcash.com">billing@aiclickandcash.com</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="icon">⚖️</div>
+        <h3>Legal & DMCA</h3>
+        <p><a href="mailto:dmca@aiclickandcash.com">dmca@aiclickandcash.com</a></p>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Send Us a Message</h2>
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <select id="subject" name="subject" required>
+            <option value="">Select a topic...</option>
+            <option value="support">Technical Support</option>
+            <option value="billing">Billing Question</option>
+            <option value="refund">Refund Request</option>
+            <option value="access">Account Access</option>
+            <option value="general">General Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" placeholder="Describe your question or issue in detail..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message →</button>
+        <p class="response-note">🔒 Your information is secure. We respond within 24–48 business hours.</p>
+      </form>
+    </div>
+  </div>
+  <footer>© 2025 AI Click And Cash. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="refund-policy.html">Refund Policy</a> | <a href="earnings-disclaimer.html">Earnings Disclaimer</a> | <a href="contact.html">Contact Us</a></footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      var btn = e.target.querySelector('.btn-submit');
+      btn.textContent = '✓ Message Sent!';
+      btn.style.background = '#16a34a';
+      btn.disabled = true;
+      e.target.reset();
+      setTimeout(function() {
+        btn.textContent = 'Send Message →';
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
